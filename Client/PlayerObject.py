@@ -40,13 +40,7 @@ class PlayerObject():
 		
 	def setH(self, h):
 		self.actor.setH(h)
-	"""
-	@Marvin
-	Move moves the player around the map based on 
-	Must be called from a task to function properly
-	Currently set up to take in random test data
-	Non-random will have keys supplied from client input
-	"""
+
 	def move(self, isActorMove):
 		if isActorMove == "True":
 			if self.isMoving is False:
