@@ -4,8 +4,8 @@ import model.Player;
 
 public class DBConnection {
 
-	private static final String USERNAME = "user";
-	private static final String PASSWORD = "pass";
+	private static final String USERNAME = "username";
+	private static final String PASSWORD = "password";
 	private static final String URL = "jdbc:mysql://localhost:3306/gameDB";
 	
 	private static Connection conn = null;
