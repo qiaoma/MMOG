@@ -1,13 +1,3 @@
-# Author: Ryan Myers
-# Models: Jeff Styers, Reagan Heller
-
-
-# Last Updated: 6/13/2005
-#
-# This tutorial provides an example of creating a character
-# and having it walk around on uneven terrain, as well
-# as implementing a fully rotatable camera.
-
 import direct.directbase.DirectStart
 from panda3d.core import CollisionTraverser,CollisionNode
 from panda3d.core import CollisionHandlerQueue,CollisionRay
