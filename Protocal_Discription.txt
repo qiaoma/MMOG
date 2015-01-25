@@ -1,0 +1,81 @@
+Client send data to server
+
+taskcode range 1-99
+
+Message with the format to send to the server: 
+
+1. login
+	
+	1 username password
+
+2. register 
+	
+	2 username password
+
+3. logout
+
+	3 username
+
+4. player move request
+	
+	4 username,x,y,z,h
+
+5. Panda possible attack
+
+	5 username
+
+Server send data to client
+
+taskcode range 100-200
+
+1. Login
+
+	If client login successfully, server will send the initail player's position
+
+
+	server send to new login player
+	
+	100 username1,x,y,z,h:username2,x,y,z,h:username3,x,y,z,h:panda,x,y,z,h
+
+
+	server send to other active player
+
+	102 username,x,y,z,h
+
+
+	login fail
+	
+	101 LoginFail
+
+2. register 
+	
+	successfully feedback
+
+	110 Registered
+
+	unsuccessfully feedback
+
+	111 UsernameExist
+	
+3. logout to the server
+
+	120 username
+
+4. player move response
+	
+	130 username,isMoving,x,y,z,h
+
+5. panda move
+	
+	140 taegetUsername
+
+
+"panda" is a spectial word.It is the username of Panda object. Players cannot user "panda" as uername.
+
+attak distance  = 10
+
+
+
+		
+
+

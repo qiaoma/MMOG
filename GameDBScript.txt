@@ -1,0 +1,33 @@
+Create database GameDB;
+
+use GameDB;
+
+drop table if exists player;
+
+
+
+create table player (
+
+id     integer auto_increment primary key,
+
+username   varchar(255),
+
+password    varchar(255)
+,
+position_x	double,
+position_y	double,
+position_z	double,
+heading	double,
+roll	double,
+pitch	double
+);
+
+
+
+
+insert into player (username, password, position_x, position_y, position_z, heading, roll, pitch) 
+values ('panda', 'panda', -107.575, 26.6066, -0.490075, 60.5011, 0, 0);
+
+
+
+
